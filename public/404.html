@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA redirect hack
+      const path = window.location.pathname.split('/').slice(2).join('/');
+      const base = '/workshops-17-11/';
+      window.location.replace(base + (path ? '?' + path : ''));
+    </script>
+  </head>
+  <body></body>
+</html>
