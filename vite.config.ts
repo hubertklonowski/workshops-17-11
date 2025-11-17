@@ -1,10 +1,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// GitHub Pages base path (repository name). Adjust if deploying to user/organization root.
-const base = '/workshops-17-11/';
-
+// GitHub Pages base path - use './' for relative paths
 export default defineConfig({
   plugins: [react()],
-  base,
+  base: './',
 });
